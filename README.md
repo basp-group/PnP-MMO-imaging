@@ -41,7 +41,7 @@ This code relies on
 - scikit-image
 ```
 
-In order to use this code, you need to update the paths in the [configfiles/setup.json](https://github.com/matthieutrs/minimal_cvpnp/blob/main/configfiles/setup.json) config file:
+In order to use this code, you need to update the paths in the [configfiles/setup.json](https://github.com/basp-group/PnP-MMO-imaging/blob/main/configfiles/setup.json) config file:
 ```json
 {
 "path_dataset": "/pth/to/your/ImageNet/val/"
@@ -52,7 +52,7 @@ In order to use this code, you need to update the paths in the [configfiles/setu
 ```
 
 The current code assumes that:
-- the weights are in a folder `checkpoints/pretrained/` at the root of your project (see the loading of the networks in the [Denoiser](https://github.com/matthieutrs/minimal_cvpnp_shared/blob/74ebc171ad586e1494cb3bcf6f694bfcacb8a9d9/optim/tools.py#L79) class);
+- the weights are in a folder `checkpoints/pretrained/` at the root of your project (see the loading of the networks in the [Denoiser](https://github.com/basp-group/PnP-MMO-imaging/blob/main/optim/tools.py#L77) class);
 - the blur kernels are in a folder `blur_models/` at the root of your project.
 
 ## Datasets & models
