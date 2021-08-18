@@ -1,0 +1,6 @@
+{
+"path_dataset": "/pth/to/ImageNet/val/"
+, "path_dataset_pnp": "/pth/to/BSDS300/images/test/"
+, "pattern_red": "*.jpg"
+, "root_folder": "/pth/to/project/"
+}
