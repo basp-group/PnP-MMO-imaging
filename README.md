@@ -65,11 +65,15 @@ The BSD300 dataset can be found there: [https://www2.eecs.berkeley.edu/Research/
 ## Citation & contact
 
 ```bibtex
-@article{pesquet2020learning,
-  title={Learning Maximally Monotone Operators for Image Recovery},
+@article{pesquet2021learning,
+  title={Learning maximally monotone operators for image recovery},
   author={Pesquet, Jean-Christophe and Repetti, Audrey and Terris, Matthieu and Wiaux, Yves},
-  journal={to appear in SIAM J. on Imaging Sci.},
-  year={2021}
+  journal={SIAM Journal on Imaging Sciences},
+  volume={14},
+  number={3},
+  pages={1206--1237},
+  year={2021},
+  publisher={SIAM}
 }
 ```
 
