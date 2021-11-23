@@ -22,9 +22,9 @@ python3 test_pnp.py --architecture='DnCNN_nobn' --n_ch=3 --noise_level=0.01 --no
 ```
 
 #### Training
-In order to train a DnCNN (without BN) as in the paper, for denoising grayscale images with noise level 0.01 and $\lambda=1e-5$ and $\epsilon=-0.05$, run:
+In order to train a DnCNN (without BN) as in the paper, for denoising grayscale images with noise level 0.01 and $\lambda=1e-5$ and $\epsilon=0.05$, run:
 ```bash
-python3 train.py --architecture='DnCNN_nobn' --n_ch=1  --epsilon=-0.05 --lambdajr=1e-5  --noise_level=0.01
+python3 train.py --architecture='DnCNN_nobn' --n_ch=1  --epsilon=0.05 --lambdajr=1e-5  --noise_level=0.01
 ```
 Note that in the paper, we first pretrained the denoisers with `--lambdajr=0`, which improved results, and that we used a batch of size 100.
 
@@ -77,7 +77,7 @@ The BSD300 dataset can be found there: [https://www2.eecs.berkeley.edu/Research/
 }
 ```
 
-Don't hesitate to contact me (mt114@hw.ac.uk)<sup>[*](#footnote)</sup> if you have any question!
+Don't hesitate to contact me (m.terris@hw.ac.uk)<sup>[*](#footnote)</sup> if you have any question!
 
 **License:** GNU General Public License v3.0.
 

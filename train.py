@@ -23,7 +23,7 @@ parser.add_argument("--epochs", type=int, default=200, help="Number of training 
 parser.add_argument("--lambdajr", type=float, default=1e-5, help="Initial reg parameter")
 parser.add_argument("--outf", type=str, default="checkpoints", help='path of log files')
 parser.add_argument("--noise_level", type=float, default=0.01, help='noise level')
-parser.add_argument("--epsilon", type=float, default=0., help='safety bound for lip') 
+parser.add_argument("--epsilon", type=float, default=0., help='safety bound for lip (should be positive)')
 parser.add_argument("--architecture", type=str, default='DnCNN_nobn', help="type of network to study.")
 parser.add_argument("--pth_config_file", type=str, default='configfiles/setup.json')
 opt = parser.parse_args()
@@ -48,7 +48,7 @@ def compute_reg(out, data_true, model, reg_fun, epsilon):
         
     out_net_reg = 2.*out_reg-out_detached
     reg_loss = reg_fun(out_detached, out_net_reg)
-    reg_loss_max = torch.max(reg_loss, torch.ones_like(reg_loss)+epsilon)
+    reg_loss_max = torch.max(reg_loss, torch.ones_like(reg_loss)-epsilon)
     return reg_loss_max.max() 
 
 
