@@ -8,6 +8,9 @@ The Lipschitz constant of `Q` is estimated via the spectral norm of its Jacobian
 The resulting denoiser is then plugged in a PnP forward-backward algorithm.
 
 **Link to paper: [https://arxiv.org/pdf/2012.13247.pdf](https://arxiv.org/pdf/2012.13247.pdf)**
+_______
+- **_News (2022-12)_**: New training codes relying on torch lightning are available [here](https://github.com/matthieutrs/LMMO_lightning). No need for pretraining anymore! A toy colab notebook for testing the PnP algorithm is also available [here](https://colab.research.google.com/drive/1pVNl4VhDLaYMC7KOyL8f7Zyv-zygM4vK#scrollTo=QlNANCmQkbUu).
+_______
 
 ## Usage
 
